@@ -1,6 +1,7 @@
 package com.example.ipcdemo;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,12 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Log.d("sUserId_second= ",String.valueOf(UserManager.sUerId));
         Button btnStartThrid = findViewById(R.id.btn_start_third);
+
+        ParcelUser user = getIntent().getExtras().getParcelable("user");
+        Log.d("name",user.getName());
+        Log.d("age",user.getAge()+"");
+        Log.d("address",user.getAddress());
+
         btnStartThrid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
