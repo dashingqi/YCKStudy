@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YCKStudy.iml" filepath="$PROJECT_DIR$/YCKStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abnormalactivitydemo/abnormalactivitydemo.iml" filepath="$PROJECT_DIR$/abnormalactivitydemo/abnormalactivitydemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andpermissiondemo/andpermissiondemo.iml" filepath="$PROJECT_DIR$/andpermissiondemo/andpermissiondemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera1and2/camera1and2.iml" filepath="$PROJECT_DIR$/camera1and2/camera1and2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera2_demo/camera2_demo.iml" filepath="$PROJECT_DIR$/camera2_demo/camera2_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera2test/camera2test.iml" filepath="$PROJECT_DIR$/camera2test/camera2test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" filepath="$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipcdemo/ipcdemo.iml" filepath="$PROJECT_DIR$/ipcdemo/ipcdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layoutanimator/layoutanimator.iml" filepath="$PROJECT_DIR$/layoutanimator/layoutanimator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" filepath="$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadingdialogdemo/loadingdialogdemo.iml" filepath="$PROJECT_DIR$/loadingdialogdemo/loadingdialogdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediademo/mediademo.iml" filepath="$PROJECT_DIR$/mediademo/mediademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediaplayerdemo/mediaplayerdemo.iml" filepath="$PROJECT_DIR$/mediaplayerdemo/mediaplayerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notificationdemo/notificationdemo.iml" filepath="$PROJECT_DIR$/notificationdemo/notificationdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packinglistview/packinglistview.iml" filepath="$PROJECT_DIR$/packinglistview/packinglistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permission_demo/permission_demo.iml" filepath="$PROJECT_DIR$/permission_demo/permission_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photocompress/photocompress.iml" filepath="$PROJECT_DIR$/photocompress/photocompress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_operator_create/rxjava_operator_create.iml" filepath="$PROJECT_DIR$/rxjava_operator_create/rxjava_operator_create.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_operator_exchange/rxjava_operator_exchange.iml" filepath="$PROJECT_DIR$/rxjava_operator_exchange/rxjava_operator_exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_retrofit/rxjava_retrofit.iml" filepath="$PROJECT_DIR$/rxjava_retrofit/rxjava_retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" filepath="$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singletopactivity/singletopactivity.iml" filepath="$PROJECT_DIR$/singletopactivity/singletopactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" filepath="$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threaddemo/threaddemo.iml" filepath="$PROJECT_DIR$/threaddemo/threaddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" filepath="$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" />
+    </modules>
+  </component>
+</project>

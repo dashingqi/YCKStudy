@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.getandsetmethod.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启动画"
+            />
+
+        <Button
+            android:id="@+id/stop_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="停止动画"
+            android:textSize="22sp"
+            />
+
+    </RelativeLayout>
+    <TextView
+
+        android:layout_margin="20dp"
+        android:id="@+id/btn_view_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hahah"
+        android:layout_gravity="center"
+        android:textSize="28sp"
+
+       />
+
+</LinearLayout>
