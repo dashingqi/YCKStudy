@@ -35,6 +35,28 @@ import java.io.ObjectOutputStream;
  * <p>
  *     Serializable:使用简便，但是效率低，有很多I/O 操作
  *     Parcelable:使用复杂，但是效率高，是Android平台提供的，优先考虑使用这个。
+ *
+ *
+ * Android IPC 方式
+ *
+ * 1. 使用Bundle
+ *
+ * Bundle 实现了Parcelable接口，可以在不同的进程间进行通信
+ * Bundle 之所以已键值对存储数据，是因为其内部维护了一个ArrayMap()，ArrayMap内部维护了两个数组，一个int数组，是存储对象数据对应的角标
+ * 一个对象数组，用来保存Key和value，内部使用二分法进行key的排序，在进行取值的时候也是使用二分法进行取值的。适合于小数据量的传递。使用Bundle
+ * 来传递数据可以保证更快的速度和更少的内存占用。
+ *
+ * Bundle 是使用Parcelable 进行序列化，但是HashMap是使用Serializable进行序列化，
+ * 都知道Parcelable是Android平台推荐使用，虽然写法复杂，但是效率高，省内存。
+ *
+ * Intent.putExtras()和Intent.putString();
+ *
+ * A传给B B传给C   如果用Bundle 可以在B中直接传递Bundle对象，在传递给C  （在B中可以添加新的Key和Value，在C中也是可以取到的）
+ * 如果使用 Intent.putString(),需要在B中把值取出来，在设置到putString中，在传递给C。
+ *
+ * 2. 使用文件共享
+ * 两个进程通过读写同一个文件进行进程间通信。
+ *
  */
 public class MainActivity extends AppCompatActivity {
 
