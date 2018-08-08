@@ -28,6 +28,8 @@
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" filepath="$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/singletopactivity/singletopactivity.iml" filepath="$PROJECT_DIR$/singletopactivity/singletopactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socketdemo/socketdemo.iml" filepath="$PROJECT_DIR$/socketdemo/socketdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tcpserverservice/tcpserverservice.iml" filepath="$PROJECT_DIR$/tcpserverservice/tcpserverservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" filepath="$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/threaddemo/threaddemo.iml" filepath="$PROJECT_DIR$/threaddemo/threaddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" filepath="$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" />
