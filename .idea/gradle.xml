@@ -14,12 +14,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asynctaskdemo" />
             <option value="$PROJECT_DIR$/binderdemo" />
-            <option value="$PROJECT_DIR$/bitmapdemo" />
             <option value="$PROJECT_DIR$/camera1and2" />
             <option value="$PROJECT_DIR$/camera2_demo" />
             <option value="$PROJECT_DIR$/camera2test" />
             <option value="$PROJECT_DIR$/contentproviderdemo" />
             <option value="$PROJECT_DIR$/getandsetmethod" />
+            <option value="$PROJECT_DIR$/imageloaderdemo" />
             <option value="$PROJECT_DIR$/ipcdemo" />
             <option value="$PROJECT_DIR$/layoutanimator" />
             <option value="$PROJECT_DIR$/listviewcbdemo" />
@@ -36,8 +36,6 @@
             <option value="$PROJECT_DIR$/rxjavademo" />
             <option value="$PROJECT_DIR$/selectimagefromalbum" />
             <option value="$PROJECT_DIR$/singletopactivity" />
-            <option value="$PROJECT_DIR$/socketdemo" />
-            <option value="$PROJECT_DIR$/tcpserverservice" />
             <option value="$PROJECT_DIR$/textevaluatordemo" />
             <option value="$PROJECT_DIR$/threaddemo" />
             <option value="$PROJECT_DIR$/wheelview_demo" />

@@ -8,12 +8,12 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/binderdemo/binderdemo.iml" filepath="$PROJECT_DIR$/binderdemo/binderdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bitmapdemo/bitmapdemo.iml" filepath="$PROJECT_DIR$/bitmapdemo/bitmapdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera1and2/camera1and2.iml" filepath="$PROJECT_DIR$/camera1and2/camera1and2.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2_demo/camera2_demo.iml" filepath="$PROJECT_DIR$/camera2_demo/camera2_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2test/camera2test.iml" filepath="$PROJECT_DIR$/camera2test/camera2test.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" filepath="$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" filepath="$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" filepath="$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ipcdemo/ipcdemo.iml" filepath="$PROJECT_DIR$/ipcdemo/ipcdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/layoutanimator/layoutanimator.iml" filepath="$PROJECT_DIR$/layoutanimator/layoutanimator.iml" />
       <module fileurl="file://$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" filepath="$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" />
@@ -30,8 +30,6 @@
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" filepath="$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/singletopactivity/singletopactivity.iml" filepath="$PROJECT_DIR$/singletopactivity/singletopactivity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/socketdemo/socketdemo.iml" filepath="$PROJECT_DIR$/socketdemo/socketdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tcpserverservice/tcpserverservice.iml" filepath="$PROJECT_DIR$/tcpserverservice/tcpserverservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" filepath="$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/threaddemo/threaddemo.iml" filepath="$PROJECT_DIR$/threaddemo/threaddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" filepath="$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" />
