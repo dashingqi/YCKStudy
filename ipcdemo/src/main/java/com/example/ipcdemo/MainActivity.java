@@ -1,6 +1,8 @@
 package com.example.ipcdemo;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.UriMatcher;
 import android.os.Binder;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -57,7 +59,38 @@ import java.io.ObjectOutputStream;
  * 2. 使用文件共享
  * 两个进程通过读写同一个文件进行进程间通信。
  *
- */
+ * 3.ContentProvider
+ * 1) query() delete(),insert(),update(),onCreate(),getType();
+ * 2) private final static UriMatch uriMatch = new UriMatch(UriMatch.NO_MATCH);
+ *     静态代码块:将地址与code关联 根据code来具体访问时那张表
+ *
+ *    static
+ *    {
+ *        uriMatch.addUri(authority,table_name,UriMatch.code);
+ *    }
+ *
+ *    onCreate(){
+ *        初始化数据库，插入数据；
+ *    }
+ *
+ * 3)数据库知识
+ *  SQLiteOpenHelper:
+ *  public SQLiteOpHelper(DbName){
+ *      super(args,DbName,args,Version)
+ *  }
+ *
+ *  onCreate(){
+ *  只会调用一次，做些初始化操作，创建表
+ *  }
+ *
+ *  还有一个方法，在升级数据库的时候调用
+ * 4)配置文件中构建provider:authority="com.dashingqi.contentproviderdemo.provider"
+ *
+ * 5)MainActivity{
+ *     getContentResolver().CRUD(Uri);
+ * }
+ *
+ * */
 public class MainActivity extends AppCompatActivity {
 
     private ObjectOutputStream objectOutputStream;
@@ -68,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView tvStartSecond = findViewById(R.id.tv_start_second);
+
+
 
         //序列化过程  写数据的过程
         User user = new User("zhangqi", 14);

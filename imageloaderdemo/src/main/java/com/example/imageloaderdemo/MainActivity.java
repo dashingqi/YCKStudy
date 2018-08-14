@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
         setContentView(R.layout.activity_main);
         initData();
         initView();
-
-
+        mImageLoader = ImageLoader.build(this);
 
     }
 
@@ -135,9 +134,9 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
 
-        if (scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE){
+        if (scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
             mIsGridViewIdle = true;
-        }else{
+        } else {
             mIsGridViewIdle = false;
         }
 
@@ -151,14 +150,11 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
 
     private class MyAdapter extends BaseAdapter {
 
-        private Context mContext;
-
-        private ViewHolder viewHolder;
-
         private Drawable mDefaultBitmapDrawable;
+        private LayoutInflater mInflater;
 
         public MyAdapter(Context mContext) {
-            this.mContext = mContext;
+            mInflater = LayoutInflater.from(mContext);
             mDefaultBitmapDrawable = mContext.getResources().getDrawable(R.mipmap.ic_launcher);
         }
 
@@ -179,8 +175,9 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
+            ViewHolder viewHolder = null;
             if (convertView == null) {
-                convertView = LayoutInflater.from(mContext).inflate(R.layout.image_list_item, parent, false);
+                convertView = mInflater.inflate(R.layout.image_list_item, parent, false);
                 viewHolder = new ViewHolder();
                 viewHolder.imageview = convertView.findViewById(R.id.image);
                 convertView.setTag(viewHolder);
@@ -190,19 +187,18 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
             }
 
             ImageView imageView = viewHolder.imageview;
-            String tag = (String) imageView.getTag();
-            String uri = getItem(position);
+            final String tag = (String) imageView.getTag();
+            final String uri = getItem(position);
 
             if (!uri.equals(tag)) {
                 imageView.setImageDrawable(mDefaultBitmapDrawable);
             }
 
-            if (mIsGridViewIdle && mCanGetBitmapFromNetWork){
+            if (mIsGridViewIdle && mCanGetBitmapFromNetWork) {
                 imageView.setTag(uri);
+                mImageLoader.bindBitmap(uri, imageView, mImageWidth, mImageWidth);
 
             }
-
-
             return convertView;
         }
     }

@@ -51,7 +51,7 @@ public class ImageLoader {
     private HttpURLConnection urlConnection;
     private static final int DISK_CATCH_INDEX = 0;
     private Bitmap bitmap;
-    private static final int TAG_KEY_URI = 1;
+    private static final int TAG_KEY_URI = R.id.imageloader_uri;
     private static final int MESSAGE_POST_RESULT = 1;
     private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
     private static final int CORE_POOL_SIZE = CPU_COUNT + 1;
@@ -454,7 +454,7 @@ public class ImageLoader {
         }
 
 
-        if (bitmap == null && !mIsDiskLruCacheCreate)
+        if (bitmap == null && mIsDiskLruCacheCreate)
             bitmap = downloadBitmapFromUrl(uri);
 
 
