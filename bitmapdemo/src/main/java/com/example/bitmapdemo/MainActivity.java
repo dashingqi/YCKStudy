@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         //获取到当前进程最大的内存
         int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
 
-        //设置当前缓存为最大的 1/8
+        //设置当前内存中的 缓存为最大的 1/8
         int catchMemory = maxMemory / 8;
 
         //计算缓存对象的大小,大小是KB(除以了1024)

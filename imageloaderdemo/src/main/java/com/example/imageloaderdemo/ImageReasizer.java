@@ -8,11 +8,11 @@ import android.util.Log;
 
 import java.io.FileDescriptor;
 
-public class ImageResizer {
+public class ImageReasizer {
 
     public static final String TAG = "IamgeResizer";
 
-    public ImageResizer() {
+    public ImageReasizer() {
 
     }
 
@@ -35,7 +35,7 @@ public class ImageResizer {
     }
 
 
-    public static Bitmap decodeSampleBitmapFromFileDecsriptor(FileDescriptor fd,int reqHeight,int reqWidth){
+    public static Bitmap decodeSampleBitmapFromFileDescriptor(FileDescriptor fd, int reqHeight, int reqWidth){
 
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
