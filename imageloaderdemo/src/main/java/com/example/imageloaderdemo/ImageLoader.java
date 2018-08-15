@@ -63,19 +63,19 @@ public class ImageLoader {
 
 
         private final AtomicInteger mCount = new AtomicInteger(1);
+
         @Override
         public Thread newThread(@NonNull Runnable r) {
-            return new Thread(r,"ImageLoader#"+mCount.getAndIncrement());
+            return new Thread(r, "ImageLoader#" + mCount.getAndIncrement());
         }
     };
 
 
-    public static  final Executor THREAD_POOL_EXECUTOR = new ThreadPoolExecutor(
-           CORE_POOL_SIZE,MAXIMUM_POOL_SIZE,
+    public static final Executor THREAD_POOL_EXECUTOR = new ThreadPoolExecutor(
+            CORE_POOL_SIZE, MAXIMUM_POOL_SIZE,
             KEEP_ALIVE, TimeUnit.SECONDS,
-            new LinkedBlockingQueue<Runnable>(),sThreadFactory
-            );
-
+            new LinkedBlockingQueue<Runnable>(), sThreadFactory
+    );
 
 
     private Handler mMainHandler = new Handler(Looper.getMainLooper()) {
@@ -85,16 +85,15 @@ public class ImageLoader {
             LoaderResult loaderResult = (LoaderResult) msg.obj;
             ImageView imageView = loaderResult.imageView;
             imageView.setImageBitmap(loaderResult.bitmap);
-            String uri = (String)imageView.getTag(TAG_KEY_URI);
+            String uri = (String) imageView.getTag(TAG_KEY_URI);
 
             if (uri.equals(loaderResult.uri))
                 imageView.setImageBitmap(loaderResult.bitmap);
             else
-                Log.d(TAG,"set image bitmap,but url has changed,ignored!");
+                Log.d(TAG, "set image bitmap,but url has changed,ignored!");
 
         }
     };
-
 
 
     public ImageLoader(Context mContext) {
@@ -109,8 +108,9 @@ public class ImageLoader {
         mLruCache = new LruCache<String, Bitmap>(cacheMemory) {
             @Override
             protected int sizeOf(String key, Bitmap value) {
-                //获取到内存缓存对象的大小  bitmap.getRowBytes()   API:1   bitmap.getRawCount()  API:12
+                //获取到内存缓存对象的大小  bitmap.getRowBytes() --> API:1 ; bitmap.getRawCount()--> API:12
                 //为了兼容性的原因，使用API版本1的。
+                Log.d(TAG,"sizeof = "+value.getRowBytes() * value.getHeight() / 1024);
                 return value.getRowBytes() * value.getHeight() / 1024;
             }
         };
@@ -136,7 +136,7 @@ public class ImageLoader {
     }
 
 
-    public static ImageLoader build(Context context){
+    public static ImageLoader build(Context context) {
         return new ImageLoader(context);
     }
 
@@ -395,16 +395,16 @@ public class ImageLoader {
      * @return
      */
     private Bitmap downloadBitmapFromUrl(String url) {
+        HttpURLConnection urlConnection = null;
+        BufferedInputStream bufferedInputStream = null;
+        Bitmap bitmap = null;
 
         try {
             URL mUrl = new URL(url);
 
             urlConnection = (HttpURLConnection) mUrl.openConnection();
             bufferedInputStream = new BufferedInputStream(urlConnection.getInputStream(), IO_BUFFER_SIZE);
-            Bitmap bitmap = BitmapFactory.decodeStream(bufferedInputStream);
-
-            return bitmap;
-
+            bitmap = BitmapFactory.decodeStream(bufferedInputStream);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -421,7 +421,7 @@ public class ImageLoader {
             }
         }
 
-        return null;
+        return bitmap;
 
     }
 
@@ -462,8 +462,8 @@ public class ImageLoader {
     }
 
 
-    public void bindBitmap(String uri,ImageView imageView){
-        bindBitmap(uri,imageView,0,0);
+    public void bindBitmap(String uri, ImageView imageView) {
+        bindBitmap(uri, imageView, 0, 0);
     }
 
 
@@ -494,7 +494,7 @@ public class ImageLoader {
                 Bitmap loadBitmap = loadBitmap(uri, reqHeight, reqWidth);
                 if (loadBitmap != null) {
 
-                    LoaderResult result = new LoaderResult(imageView, uri, bitmap);
+                    LoaderResult result = new LoaderResult(imageView, uri, loadBitmap);
                     mMainHandler.obtainMessage(MESSAGE_POST_RESULT, result).sendToTarget();
 
 
@@ -505,8 +505,6 @@ public class ImageLoader {
 
         THREAD_POOL_EXECUTOR.execute(loadBitmapTask);
     }
-
-
 
 
     class LoaderResult {
@@ -520,19 +518,5 @@ public class ImageLoader {
             this.uri = uri;
             this.bitmap = bitmap;
         }
-
-        public ImageView getImageView() {
-            return imageView;
-        }
-
-        public String getUri() {
-            return uri;
-        }
-
-        public Bitmap getBitmap() {
-            return bitmap;
-        }
     }
-
-
 }

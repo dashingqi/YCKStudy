@@ -7,7 +7,7 @@
     tools:context="com.example.threaddemo.MainActivity">
 
     <Button
-        android:id="@+id/btn_"
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
