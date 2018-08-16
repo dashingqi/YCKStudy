@@ -13,7 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/camera2test/camera2test.iml" filepath="$PROJECT_DIR$/camera2test/camera2test.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" filepath="$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" filepath="$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" filepath="$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" filepath="$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intentservicedemo/intentservicedemo.iml" filepath="$PROJECT_DIR$/intentservicedemo/intentservicedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ipcdemo/ipcdemo.iml" filepath="$PROJECT_DIR$/ipcdemo/ipcdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/layoutanimator/layoutanimator.iml" filepath="$PROJECT_DIR$/layoutanimator/layoutanimator.iml" />
       <module fileurl="file://$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" filepath="$PROJECT_DIR$/listviewcbdemo/listviewcbdemo.iml" />

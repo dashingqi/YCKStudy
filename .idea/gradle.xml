@@ -19,7 +19,9 @@
             <option value="$PROJECT_DIR$/camera2test" />
             <option value="$PROJECT_DIR$/contentproviderdemo" />
             <option value="$PROJECT_DIR$/getandsetmethod" />
+            <option value="$PROJECT_DIR$/handlerthreaddemo" />
             <option value="$PROJECT_DIR$/imageloaderdemo" />
+            <option value="$PROJECT_DIR$/intentservicedemo" />
             <option value="$PROJECT_DIR$/ipcdemo" />
             <option value="$PROJECT_DIR$/layoutanimator" />
             <option value="$PROJECT_DIR$/listviewcbdemo" />
