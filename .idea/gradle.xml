@@ -3,9 +3,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -13,11 +12,13 @@
             <option value="$PROJECT_DIR$/andpermissiondemo" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asynctaskdemo" />
+            <option value="$PROJECT_DIR$/baseactivitydemo" />
             <option value="$PROJECT_DIR$/binderdemo" />
             <option value="$PROJECT_DIR$/camera1and2" />
             <option value="$PROJECT_DIR$/camera2_demo" />
             <option value="$PROJECT_DIR$/camera2test" />
             <option value="$PROJECT_DIR$/contentproviderdemo" />
+            <option value="$PROJECT_DIR$/gesturedetectordemo" />
             <option value="$PROJECT_DIR$/getandsetmethod" />
             <option value="$PROJECT_DIR$/handlerthreaddemo" />
             <option value="$PROJECT_DIR$/imageloaderdemo" />
@@ -28,19 +29,26 @@
             <option value="$PROJECT_DIR$/loadingdialogdemo" />
             <option value="$PROJECT_DIR$/mediademo" />
             <option value="$PROJECT_DIR$/mediaplayerdemo" />
+            <option value="$PROJECT_DIR$/memoryleak" />
             <option value="$PROJECT_DIR$/notificationdemo" />
             <option value="$PROJECT_DIR$/packinglistview" />
             <option value="$PROJECT_DIR$/permission_demo" />
             <option value="$PROJECT_DIR$/photocompress" />
+            <option value="$PROJECT_DIR$/recyclerveiew_carview" />
             <option value="$PROJECT_DIR$/rxjava_operator_create" />
             <option value="$PROJECT_DIR$/rxjava_operator_exchange" />
             <option value="$PROJECT_DIR$/rxjava_retrofit" />
             <option value="$PROJECT_DIR$/rxjavademo" />
+            <option value="$PROJECT_DIR$/scrollerdemo" />
             <option value="$PROJECT_DIR$/selectimagefromalbum" />
             <option value="$PROJECT_DIR$/singletopactivity" />
             <option value="$PROJECT_DIR$/textevaluatordemo" />
             <option value="$PROJECT_DIR$/threaddemo" />
+            <option value="$PROJECT_DIR$/threadlocaldemo" />
+            <option value="$PROJECT_DIR$/velocitytrackerdemo" />
+            <option value="$PROJECT_DIR$/viewanimationdemo" />
             <option value="$PROJECT_DIR$/wheelview_demo" />
+            <option value="$PROJECT_DIR$/xnyhactivity" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

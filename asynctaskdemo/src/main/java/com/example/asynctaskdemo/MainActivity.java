@@ -1,6 +1,5 @@
 package com.example.asynctaskdemo;
 
-import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -10,25 +9,20 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ByteArrayOutputStream byteArrayOutputStream;
     private ImageView ivShow;
     private Button btnDownLoadPic;
-    private ProgressDialog progressDialog;
+    private ProgressBar mProgressBar;
+    private TextView tvShowProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnDownLoadPic = findViewById(R.id.btn_download_pic);
         ivShow = findViewById(R.id.iv_show);
+        mProgressBar = findViewById(R.id.pb);
+        tvShowProgress = findViewById(R.id.tv_show_progress);
+
+        mProgressBar.setProgress(0);
 
         btnDownLoadPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog();
                 new MyAsyncTask().execute("http://pic172.nipic.com/file/20180713/25812155_170649928000_2.jpg");
             }
         });
@@ -53,9 +50,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progressDialog.show();
+            mProgressBar.setProgress(0);
         }
 
+
+        //运行在线程池当中的。
         @Override
         protected byte[] doInBackground(String... strings) {
             byte[] bytes = new byte[1024];
@@ -73,16 +72,16 @@ public class MainActivity extends AppCompatActivity {
                 if (responseCode == 200) {
                     InputStream inputStream = connection.getInputStream();
                     long contentLength = connection.getContentLength();
-                    Log.d("contentLength= ",contentLength+"");
-                    long tottal_length = 0;
-                    int len = 0;
-                    int progress = 0;
+                    Log.d("contentLength= ", contentLength + "");
+                    long total_length = 0;
+                    int len;
+                    int progress;
 
                     while ((len = inputStream.read(bytes)) != -1) {
-                        tottal_length += len;
-                        Log.d("total_length",tottal_length+"");
-                        progress =(int) ((tottal_length /(float) contentLength) * 100);
-                        Log.d("progress = ",progress+"");
+                        total_length += len;
+                        Log.d("total_length", total_length + "");
+                        progress = (int) ((total_length / (float) contentLength) * 100);
+                        Log.d("progress = ", progress + "");
                         publishProgress(progress);
                         byteArrayOutputStream.write(bytes, 0, len);
                     }
@@ -104,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onProgressUpdate(Integer... values) {
             super.onProgressUpdate(values);
-            progressDialog.setProgress(values[0]);
+            mProgressBar.setProgress(values[0]);
+            tvShowProgress.setText(values[0] + "%");
         }
 
         @Override
@@ -112,16 +112,6 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(bitmap);
             Bitmap bitmap1 = BitmapFactory.decodeByteArray(bitmap, 0, bitmap.length);
             ivShow.setImageBitmap(bitmap1);
-
-            progressDialog.dismiss();
         }
-    }
-
-    public void showDialog() {
-        progressDialog = new ProgressDialog(MainActivity.this);
-        progressDialog.setTitle("下载");
-        progressDialog.setMessage("正在下载，请稍后！");
-        progressDialog.setCancelable(false);
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
     }
 }

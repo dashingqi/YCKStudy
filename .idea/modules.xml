@@ -7,11 +7,13 @@
       <module fileurl="file://$PROJECT_DIR$/andpermissiondemo/andpermissiondemo.iml" filepath="$PROJECT_DIR$/andpermissiondemo/andpermissiondemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseactivitydemo/baseactivitydemo.iml" filepath="$PROJECT_DIR$/baseactivitydemo/baseactivitydemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/binderdemo/binderdemo.iml" filepath="$PROJECT_DIR$/binderdemo/binderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera1and2/camera1and2.iml" filepath="$PROJECT_DIR$/camera1and2/camera1and2.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2_demo/camera2_demo.iml" filepath="$PROJECT_DIR$/camera2_demo/camera2_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2test/camera2test.iml" filepath="$PROJECT_DIR$/camera2test/camera2test.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" filepath="$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gesturedetectordemo/gesturedetectordemo.iml" filepath="$PROJECT_DIR$/gesturedetectordemo/gesturedetectordemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" filepath="$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" filepath="$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" filepath="$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" />
@@ -22,19 +24,26 @@
       <module fileurl="file://$PROJECT_DIR$/loadingdialogdemo/loadingdialogdemo.iml" filepath="$PROJECT_DIR$/loadingdialogdemo/loadingdialogdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediademo/mediademo.iml" filepath="$PROJECT_DIR$/mediademo/mediademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaplayerdemo/mediaplayerdemo.iml" filepath="$PROJECT_DIR$/mediaplayerdemo/mediaplayerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memoryleak/memoryleak.iml" filepath="$PROJECT_DIR$/memoryleak/memoryleak.iml" />
       <module fileurl="file://$PROJECT_DIR$/notificationdemo/notificationdemo.iml" filepath="$PROJECT_DIR$/notificationdemo/notificationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/packinglistview/packinglistview.iml" filepath="$PROJECT_DIR$/packinglistview/packinglistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/permission_demo/permission_demo.iml" filepath="$PROJECT_DIR$/permission_demo/permission_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/photocompress/photocompress.iml" filepath="$PROJECT_DIR$/photocompress/photocompress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerveiew_carview/recyclerveiew_carview.iml" filepath="$PROJECT_DIR$/recyclerveiew_carview/recyclerveiew_carview.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjava_operator_create/rxjava_operator_create.iml" filepath="$PROJECT_DIR$/rxjava_operator_create/rxjava_operator_create.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjava_operator_exchange/rxjava_operator_exchange.iml" filepath="$PROJECT_DIR$/rxjava_operator_exchange/rxjava_operator_exchange.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjava_retrofit/rxjava_retrofit.iml" filepath="$PROJECT_DIR$/rxjava_retrofit/rxjava_retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scrollerdemo/scrollerdemo.iml" filepath="$PROJECT_DIR$/scrollerdemo/scrollerdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" filepath="$PROJECT_DIR$/selectimagefromalbum/selectimagefromalbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/singletopactivity/singletopactivity.iml" filepath="$PROJECT_DIR$/singletopactivity/singletopactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" filepath="$PROJECT_DIR$/textevaluatordemo/textevaluatordemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/threaddemo/threaddemo.iml" filepath="$PROJECT_DIR$/threaddemo/threaddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadlocaldemo/threadlocaldemo.iml" filepath="$PROJECT_DIR$/threadlocaldemo/threadlocaldemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/velocitytrackerdemo/velocitytrackerdemo.iml" filepath="$PROJECT_DIR$/velocitytrackerdemo/velocitytrackerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewanimationdemo/viewanimationdemo.iml" filepath="$PROJECT_DIR$/viewanimationdemo/viewanimationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" filepath="$PROJECT_DIR$/wheelview_demo/wheelview_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xnyhactivity/xnyhactivity.iml" filepath="$PROJECT_DIR$/xnyhactivity/xnyhactivity.iml" />
     </modules>
   </component>
 </project>
