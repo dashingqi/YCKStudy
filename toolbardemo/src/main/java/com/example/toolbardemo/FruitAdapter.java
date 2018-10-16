@@ -21,6 +21,10 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
         this.mContext = mContext;
         this.fruitList = fruitList;
 
+
+
+
+
     }
 
 
