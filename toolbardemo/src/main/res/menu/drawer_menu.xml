@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group0"
+        android:checkableBehavior="single"></group>
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/friend"
+            android:icon="@drawable/friend"
+            android:title="Friend" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/call"
+            android:title="Phone" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/email"
+            android:icon="@drawable/email"
+            android:title="email" />
+    </group>
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/info"
+            android:icon="@drawable/info"
+            android:title="Info" />
+
+    </group>
+
+    <group
+        android:id="@+id/group5"
+        android:checkableBehavior="single"></group>
+
+</menu>
