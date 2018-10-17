@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/camera2_demo/camera2_demo.iml" filepath="$PROJECT_DIR$/camera2_demo/camera2_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2test/camera2test.iml" filepath="$PROJECT_DIR$/camera2test/camera2test.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" filepath="$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foldtoolbardemo/foldtoolbardemo.iml" filepath="$PROJECT_DIR$/foldtoolbardemo/foldtoolbardemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesturedetectordemo/gesturedetectordemo.iml" filepath="$PROJECT_DIR$/gesturedetectordemo/gesturedetectordemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" filepath="$PROJECT_DIR$/getandsetmethod/getandsetmethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" filepath="$PROJECT_DIR$/handlerthreaddemo/handlerthreaddemo.iml" />

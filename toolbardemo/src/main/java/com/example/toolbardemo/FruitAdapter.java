@@ -1,6 +1,7 @@
 package com.example.toolbardemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -33,7 +34,18 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_fruit, viewGroup,false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        final ViewHolder viewHolder = new ViewHolder(view);
+        viewHolder.mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = viewHolder.getAdapterPosition();
+                FruitBean fruitBean = fruitList.get(position);
+                Intent intent = new Intent(mContext,FruitActivity.class);
+                intent.putExtra(FruitActivity.FRUIT_NAME,fruitBean.getFruitName());
+                intent.putExtra(FruitActivity.FRUIT_IMAGE_ID,fruitBean.getFruitId());
+                mContext.startActivity(intent);
+            }
+        });
         return viewHolder;
     }
 

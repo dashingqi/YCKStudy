@@ -6,6 +6,7 @@ import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +33,8 @@ public class BaseActivity extends AppCompatActivity {
 
     private FruitBean[] fruitBeans = {new FruitBean("cherry", R.drawable.cherry), new FruitBean("apple",R.drawable.apple ), new FruitBean("banana",R.drawable.banana ),new FruitBean("grape",R.drawable.grape)};
     private List<FruitBean> fruitBeanList = new ArrayList<>();
+    private SwipeRefreshLayout mSwipeRefreshLayout;
+    private FruitAdapter fruitAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +77,38 @@ public class BaseActivity extends AppCompatActivity {
                         }).show();
             }
         });
+
+        mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.colorPrimary));
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        try{
+
+                            Thread.sleep(2000);
+
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                initData();
+                                fruitAdapter.notifyDataSetChanged();
+                                mSwipeRefreshLayout.setRefreshing(false);
+
+                            }
+                        });
+                    }
+                }).start();
+
+            }
+        });
     }
 
     /**
@@ -82,7 +117,7 @@ public class BaseActivity extends AppCompatActivity {
     private void initAdapter() {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         mRecyclerView.setLayoutManager(gridLayoutManager);
-        FruitAdapter fruitAdapter = new FruitAdapter(this, fruitBeanList);
+        fruitAdapter = new FruitAdapter(this, fruitBeanList);
         mRecyclerView.setAdapter(fruitAdapter);
 
     }
@@ -108,6 +143,7 @@ public class BaseActivity extends AppCompatActivity {
         mToolbar = findViewById(R.id.tb);
         mFloatingActionButton = findViewById(R.id.floating_action_button);
         mRecyclerView = findViewById(R.id.mRecyclerView);
+        mSwipeRefreshLayout = findViewById(R.id.mSwipeRefreshLayout);
 
     }
 
